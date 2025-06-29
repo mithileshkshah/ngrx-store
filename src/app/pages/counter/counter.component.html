@@ -1,0 +1,41 @@
+<div class="flex flex-col min-h-screen">
+  <app-custom-header></app-custom-header>
+
+  <div class="flex justify-center items-center flex-grow px-4">
+    <article
+      class="w-full max-w-md overflow-hidden rounded-lg shadow-sm transition hover:shadow-lg"
+    >
+      <div class="bg-white p-4 sm:p-6">
+        <div class="text-center font-bold text-teal-600 text-xl">
+          Counter App
+        </div>
+
+        <div class="text-center font-bold text-gray-600 mt-6 text-4xl">
+          {{ count }}
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <button
+            class="rounded-sm border border-green-600 bg-green-600 px-6 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-green-600 focus:ring-3 focus:outline-none"
+          >
+            Increment
+          </button>
+
+          <button
+            class="rounded-sm border border-red-600 bg-red-600 px-6 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-red-600 focus:ring-3 focus:outline-none"
+          >
+            Decrement
+          </button>
+
+          <button
+            class="rounded-sm border border-yellow-500 bg-yellow-500 px-6 py-2 text-sm font-medium text-white hover:bg-transparent hover:text-yellow-600 focus:ring-3 focus:outline-none"
+          >
+            Reset
+          </button>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <app-custom-footer></app-custom-footer>
+</div>
