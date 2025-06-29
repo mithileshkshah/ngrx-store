@@ -30,12 +30,12 @@ export class CounterComponent {
   }
 
   handleDecrement() {
-    this.store.dispatch(decrement());
-    // this.count$.pipe(take(1)).subscribe((count) => {
-    //   if (count > 0) {
-    //     this.store.dispatch(decrement());
-    //   }
-    // });
+    // this.store.dispatch(decrement());
+    this.count$.pipe(take(1)).subscribe((count) => {
+      if (count > 0) {
+        this.store.dispatch(decrement());
+      }
+    });
   }
 
   handleReset() {
